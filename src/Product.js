@@ -9,8 +9,10 @@ const Product = () => {
         products.map((product, i) => {
           return (
             <div className='product' key={i}>
-              <h3>{product.item}</h3>
+              <img src='product.image'/>
+              <h3>{product.name}</h3>
               <p>£{product.price}</p>
+              <button>See more</button>
             </div>
 
           )
